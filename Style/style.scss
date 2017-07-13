@@ -54,6 +54,9 @@ html, body {
 body {
   margin: 0;
   background-color: black;
+  .offset {
+    margin-top: -500px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -195,4 +198,215 @@ body {
     font-weight: 400;
     padding: 2px 7px;
   }
+}
+
+.theMenu {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  min-height: 300px;
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+  }
+
+}
+
+.middleMenu {
+  max-width: 980px;
+  margin: auto;
+  background-color: white;
+  .midMenuButtons {
+    overflow: hidden;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: inherit;
+      overflow: hidden;
+      li {
+        text-align: center;
+        margin-right: -4px;
+        margin-left: -4px;
+        margin-top: 1px;
+        color: white;
+        display: inline-block;
+        background-color: black;
+        padding: 12px 2px;
+        font-size: 36px;
+        border: none;
+        outline: none;
+      }
+      li:hover {
+        background-color: #f44336;
+      }
+    }
+
+  }
+  .pizzaMenu {
+    max-width: 980px;
+    .pizzaName {
+      float: left;
+      h1#red {
+        overflow: hidden;
+        width: 150px;
+        background-color: #f44336;
+        font-size: 36px;
+        font-weight: 400;
+
+        border-radius: 8px;
+      }
+
+      h1 {
+        float: left;
+        color: black;
+        font-size: 36px;
+        padding-left: 20px;
+        margin-left: 20px;
+      }
+
+    }
+    .pizzaPrice {
+      overflow: hidden;
+      text-align: center;
+      max-width: 100px;
+
+      h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 36px;
+        background-color: #616161;
+        margin-top: 30px;
+        border-radius: 6px;
+        color: white;
+        margin-bottom: 20px;
+
+      }
+    }
+    .pizzaIngrediants {
+      text-align: left;
+      margin-left: 20px;
+      padding-bottom: 40px;
+      padding-top: 20px;
+      border-bottom: 1px solid lightgray;
+
+      width: 95%;
+      span {
+
+        font-size: 36px;
+        color: #757575;
+
+      }
+    }
+
+  }
+}
+
+.about {
+  background-color: #8b5f5b;
+  min-height: 300px;
+  width: 100%;
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding-top: 80px;
+    font-weight: 400;
+
+  }
+  .allInfo {
+    max-width: 980px;
+    margin: auto;
+    .chef {
+      overflow: hidden;
+      width: 50%;
+
+    }
+    div {
+      .botomImg {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    #smallPick {
+      border-radius: 100px / 60px;
+      height: 100px;
+      width: 150px;
+      float: right;
+
+    }
+    .left {
+      float: left;
+      width: 50%;
+    }
+    .right {
+      overflow: hidden;
+      width: 50%;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+      text-align: left;
+    }
+    p {
+      color: white;
+      font-size: 24px;
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  background-color: #607d8b;
+  .contactInfo {
+    max-width: 980px;
+    margin: auto;
+    min-height: 300px;
+    h1 {
+      color: white;
+      margin: 0;
+      padding-top: 80px;
+    }
+    p, mark {
+      color: white;
+
+      font-size: 24px;
+    }
+    span{
+      font-size: 36px;
+      color: white;
+    }
+    input{
+      display: inline-block;
+      width:100%;
+      padding:16px;
+      font-size: 24px;
+      font-family: "Amatic SC", sans-serif;
+      margin-bottom: 24px;
+      overflow: hidden;
+
+    }
+    input[type=button]{
+      display: inline-block;
+    width: 100%;
+    }
+  }
+}
+.botblack {
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-size: 36px;
+  p{
+    a{
+      color:white;
+    }
+  }
+
+
+}
+.clear {
+  clear: both;
 }

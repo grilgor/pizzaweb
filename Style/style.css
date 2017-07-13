@@ -41,6 +41,8 @@ html, body {
 body {
   margin: 0;
   background-color: black; }
+  body .offset {
+    margin-top: -500px; }
 
 @media only screen and (min-width: 600px) {
   .TopMenu {
@@ -138,5 +140,158 @@ body {
     font-size: 24px;
     font-weight: 400;
     padding: 2px 7px; }
+
+.theMenu {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  min-height: 300px; }
+  .theMenu h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white; }
+
+.middleMenu {
+  max-width: 980px;
+  margin: auto;
+  background-color: white; }
+  .middleMenu .midMenuButtons {
+    overflow: hidden; }
+    .middleMenu .midMenuButtons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: inherit;
+      overflow: hidden; }
+      .middleMenu .midMenuButtons ul li {
+        text-align: center;
+        margin-right: -4px;
+        margin-left: -4px;
+        margin-top: 1px;
+        color: white;
+        display: inline-block;
+        background-color: black;
+        padding: 12px 2px;
+        font-size: 36px;
+        border: none;
+        outline: none; }
+      .middleMenu .midMenuButtons ul li:hover {
+        background-color: #f44336; }
+  .middleMenu .pizzaMenu {
+    max-width: 980px; }
+    .middleMenu .pizzaMenu .pizzaName {
+      float: left; }
+      .middleMenu .pizzaMenu .pizzaName h1#red {
+        overflow: hidden;
+        width: 150px;
+        background-color: #f44336;
+        font-size: 36px;
+        font-weight: 400;
+        border-radius: 8px; }
+      .middleMenu .pizzaMenu .pizzaName h1 {
+        float: left;
+        color: black;
+        font-size: 36px;
+        padding-left: 20px;
+        margin-left: 20px; }
+    .middleMenu .pizzaMenu .pizzaPrice {
+      overflow: hidden;
+      text-align: center;
+      max-width: 100px; }
+      .middleMenu .pizzaMenu .pizzaPrice h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 36px;
+        background-color: #616161;
+        margin-top: 30px;
+        border-radius: 6px;
+        color: white;
+        margin-bottom: 20px; }
+    .middleMenu .pizzaMenu .pizzaIngrediants {
+      text-align: left;
+      margin-left: 20px;
+      padding-bottom: 40px;
+      padding-top: 20px;
+      border-bottom: 1px solid lightgray;
+      width: 95%; }
+      .middleMenu .pizzaMenu .pizzaIngrediants span {
+        font-size: 36px;
+        color: #757575; }
+
+.about {
+  background-color: #8b5f5b;
+  min-height: 300px;
+  width: 100%; }
+  .about h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding-top: 80px;
+    font-weight: 400; }
+  .about .allInfo {
+    max-width: 980px;
+    margin: auto; }
+    .about .allInfo .chef {
+      overflow: hidden;
+      width: 50%; }
+    .about .allInfo div .botomImg img {
+      width: 100%; }
+    .about .allInfo #smallPick {
+      border-radius: 100px / 60px;
+      height: 100px;
+      width: 150px;
+      float: right; }
+    .about .allInfo .left {
+      float: left;
+      width: 50%; }
+    .about .allInfo .right {
+      overflow: hidden;
+      width: 50%; }
+    .about .allInfo h1 {
+      font-size: 36px;
+      font-weight: 400;
+      text-align: left; }
+    .about .allInfo p {
+      color: white;
+      font-size: 24px; }
+
+.contact {
+  width: 100%;
+  background-color: #607d8b; }
+  .contact .contactInfo {
+    max-width: 980px;
+    margin: auto;
+    min-height: 300px; }
+    .contact .contactInfo h1 {
+      color: white;
+      margin: 0;
+      padding-top: 80px; }
+    .contact .contactInfo p, .contact .contactInfo mark {
+      color: white;
+      font-size: 24px; }
+    .contact .contactInfo span {
+      font-size: 36px;
+      color: white; }
+    .contact .contactInfo input {
+      display: inline-block;
+      width: 100%;
+      padding: 16px;
+      font-size: 24px;
+      font-family: "Amatic SC", sans-serif;
+      margin-bottom: 24px;
+      overflow: hidden; }
+    .contact .contactInfo input[type=button] {
+      display: inline-block;
+      width: 100%; }
+
+.botblack {
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-size: 36px; }
+  .botblack p a {
+    color: white; }
+
+.clear {
+  clear: both; }
 
 /*# sourceMappingURL=style.css.map */
