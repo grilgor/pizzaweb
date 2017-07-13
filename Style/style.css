@@ -34,6 +34,9 @@
 .col-12 {
   width: 100%; }
 
+* {
+  box-sizing: border-box; }
+
 html, body {
   height: 100%;
   font-family: "Amatic SC", sans-serif; }
@@ -164,8 +167,8 @@ body {
       overflow: hidden; }
       .middleMenu .midMenuButtons ul li {
         text-align: center;
-        margin-right: -4px;
-        margin-left: -4px;
+        margin-right: -1px;
+        margin-left: -1px;
         margin-top: 1px;
         color: white;
         display: inline-block;
@@ -279,7 +282,7 @@ body {
       font-family: "Amatic SC", sans-serif;
       margin-bottom: 24px;
       overflow: hidden; }
-    .contact .contactInfo input[type=button] {
+    .contact .contactInfo input[type=submit] {
       display: inline-block;
       width: 100%; }
 

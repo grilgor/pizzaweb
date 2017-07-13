@@ -45,7 +45,9 @@
 .col-12 {
   width: 100%;
 }
-
+*{
+  box-sizing: border-box;
+}
 html, body {
   height: 100%;
   font-family: "Amatic SC", sans-serif;
@@ -227,8 +229,8 @@ body {
       overflow: hidden;
       li {
         text-align: center;
-        margin-right: -4px;
-        margin-left: -4px;
+        margin-right: -1px;
+        margin-left: -1px;
         margin-top: 1px;
         color: white;
         display: inline-block;
@@ -388,7 +390,7 @@ body {
       overflow: hidden;
 
     }
-    input[type=button]{
+    input[type=submit]{
       display: inline-block;
     width: 100%;
     }
