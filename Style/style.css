@@ -44,8 +44,6 @@ html, body {
 body {
   margin: 0;
   background-color: black; }
-  body .offset {
-    margin-top: -500px; }
 
 @media only screen and (min-width: 600px) {
   .TopMenu {
@@ -158,14 +156,15 @@ body {
   margin: auto;
   background-color: white; }
   .middleMenu .midMenuButtons {
-    overflow: hidden; }
-    .middleMenu .midMenuButtons ul {
+    overflow: hidden;
+    /*
+    ul {
       list-style: none;
       padding: 0;
       margin: 0;
       width: inherit;
-      overflow: hidden; }
-      .middleMenu .midMenuButtons ul li {
+      overflow: hidden;
+      li {
         text-align: center;
         margin-right: -1px;
         margin-left: -1px;
@@ -176,9 +175,30 @@ body {
         padding: 12px 2px;
         font-size: 36px;
         border: none;
-        outline: none; }
-      .middleMenu .midMenuButtons ul li:hover {
-        background-color: #f44336; }
+        outline: none;
+      }
+      li:hover {
+        background-color: #f44336;
+      }
+    }*/ }
+    .middleMenu .midMenuButtons button {
+      font-family: "Amatic SC", sans-serif;
+      width: 33.33%;
+      text-align: center;
+      color: white;
+      background-color: black;
+      padding: 12px 2px;
+      font-size: 36px;
+      border: none;
+      outline: none;
+      float: left;
+      overflow: hidden; }
+    .middleMenu .midMenuButtons button:hover {
+      background-color: #f44336;
+      cursor: hand; }
+    .middleMenu .midMenuButtons button:active {
+      background-color: white;
+      color: black; }
   .middleMenu .pizzaMenu {
     max-width: 980px; }
     .middleMenu .pizzaMenu .pizzaName {

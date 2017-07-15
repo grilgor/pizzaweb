@@ -56,9 +56,6 @@ html, body {
 body {
   margin: 0;
   background-color: black;
-  .offset {
-    margin-top: -500px;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -221,6 +218,30 @@ body {
   background-color: white;
   .midMenuButtons {
     overflow: hidden;
+
+    button{
+      font-family: "Amatic SC", sans-serif;
+      width:33.33%;
+
+      text-align: center;
+      color: white;
+      background-color: black;
+      padding: 12px 2px;
+      font-size: 36px;
+      border: none;
+      outline: none;
+      float:left;
+      overflow:hidden;
+    }
+    button:hover{
+      background-color: #f44336;
+      cursor: hand;
+    }
+    button:active{
+      background-color:white;
+      color:black;
+    }
+    /*
     ul {
       list-style: none;
       padding: 0;
@@ -243,7 +264,7 @@ body {
       li:hover {
         background-color: #f44336;
       }
-    }
+    }*/
 
   }
   .pizzaMenu {

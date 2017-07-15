@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 
 </head>
-<body class="offset" onLoad="window.scroll(0,900)">
+<body>
 
 <div class="TopMenu col-12">
     <div class="TopMenuButtons">
@@ -46,97 +46,196 @@
     <h1 id="theMenu">The Menu</h1>
     <div class="middleMenu">
         <div class="midMenuButtons ">
+            <button class="button" onclick="menuChange('pizzas')">Pizza</button>
+            <button class="button" onclick="menuChange('salads')">Salad</button>
+            <button class="button" onclick="menuChange('starter')">Starter</button>
             <!--
                 <button type="button" onclick="document.getElementById('pizza').innerHTML = "
 
                 ">
                 </button>  -->
-            <ul>
-                <a href="#">
+            <!--<ul>
+                <a href="#nowhere" onclick="pizza()">
                     <li class="col-4">Pizza</li>
                 </a>
-                <a href="#">
+                <a href="#nowhere2" onclick="salads()">
                     <li class="col-4">Salads</li>
                 </a>
-                <a href="#">
+                <a href="#nowhere3" onclick="starter()">
                     <li class="col-4">Starter</li>
                 </a>
             </ul>
-
+-->
         </div>
-        <div class="pizzaMenu">
-            <!--Pizza one-->
-            <div class="pizzaName col-10">
-                <h1>Margherita</h1>
+        <div class="pizzaMenu" id="mainMenu">
+            <div id="pizzas">
+                <!--Pizza one-->
+                <div class="pizzaName col-10">
+                    <h1>Margherita</h1>
 
-            </div>
-            <div class="pizzaPrice">
-                <h2>$12.50</h2>
-            </div>
-            <div class="clear"></div>
-            <div class="pizzaIngrediants">
-                <span>Fresh tomatoes, fresh mozzarella, fresh basil</span>
-            </div>
-            <!--Pizza two-->
-            <div class="pizzaName col-10">
-                <h1>Formaggio</h1>
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$12.50</h2>
+                </div>
+                <div class="clear"></div>
+                <div class="pizzaIngrediants">
+                    <span>Fresh tomatoes, fresh mozzarella, fresh basil</span>
+                </div>
+                <!--Pizza two-->
+                <div class="pizzaName col-10">
+                    <h1>Formaggio</h1>
 
-            </div>
-            <div class="pizzaPrice">
-                <h2>$15.50</h2>
-            </div>
-            <div class="pizzaIngrediants">
-                <span>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</span>
-            </div>
-            <!--Pizza Three-->
-            <div class="pizzaName col-10">
-                <h1>Chicken</h1>
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$15.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</span>
+                </div>
+                <!--Pizza Three-->
+                <div class="pizzaName col-10">
+                    <h1>Chicken</h1>
 
-            </div>
-            <div class="pizzaPrice">
-                <h2>$17.00</h2>
-            </div>
-            <div class="pizzaIngrediants">
-                <span>Fresh tomatoes, mozzarella, chicken, onions</span>
-            </div>
-            <!-- Pizza Four-->
-            <div class="pizzaName col-10">
-                <h1>Pineapple'o'clock</h1>
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$17.00</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Fresh tomatoes, mozzarella, chicken, onions</span>
+                </div>
+                <!-- Pizza Four-->
+                <div class="pizzaName col-10">
+                    <h1>Pineapple'o'clock</h1>
 
-            </div>
-            <div class="pizzaPrice">
-                <h2>$16.50</h2>
-            </div>
-            <div class="pizzaIngrediants">
-                <span>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</span>
-            </div>
-            <!--pizza five-->
-            <div class="pizzaName col-10">
-                <h1>Meat Town
-                    <mark style="background-color: #f44336; padding: 8px 16px; border-radius: 8px;">Hot!</mark>
-                </h1>
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$16.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</span>
+                </div>
+                <!--pizza five-->
+                <div class="pizzaName col-10">
+                    <h1>Meat Town
+                        <mark style="background-color: #f44336; padding: 8px 16px; border-radius: 8px;">Hot!</mark>
+                    </h1>
 
-            </div>
-            <div class="pizzaPrice">
-                <h2>$20.00</h2>
-            </div>
-            <div class="pizzaIngrediants">
-                <span>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</span>
-            </div>
-            <!--pizza six-->
-            <div class="pizzaName col-10">
-                <h1>Parma</h1>
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$20.00</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</span>
+                </div>
+                <!--pizza six-->
+                <div class="pizzaName col-10">
+                    <h1>Parma</h1>
 
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$21.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</span>
+                </div>
             </div>
-            <div class="pizzaPrice">
-                <h2>$21.50</h2>
+            <div id="salads" style="display: none;">
+                <!--salad one-->
+                <div class="pizzaName col-10">
+                    <h1>Lasagna</h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$13.50</h2>
+                </div>
+                <div class="clear"></div>
+                <div class="pizzaIngrediants">
+                    <span>Special sauce, mozzarella, parmesan, ground beef</span>
+                </div>
+                <!--sallad two-->
+                <div class="pizzaName col-10">
+                    <h1>Ravioli</h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$14.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Ravioli filled with cheese</span>
+                </div>
+                <!--sallad Three-->
+                <div class="pizzaName col-10">
+                    <h1>Spaghetti Classica</h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$11.00</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Fresh tomatoes, onions, ground beef</span>
+                </div>
+                <!-- sallad Four-->
+                <div class="pizzaName col-10">
+                    <h1>Seafood pasta</h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$25.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Salmon, shrimp, lobster, garlic</span>
+                </div>
             </div>
-            <div class="pizzaIngrediants">
-                <span>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</span>
+            <div id="starter" style="display: none;">
+                <!--starter one-->
+                <div class="pizzaName col-10">
+                    <h1>Today's Soup </h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$5.50</h2>
+                </div>
+                <div class="clear"></div>
+                <div class="pizzaIngrediants">
+                    <span>Ask the waiter</span>
+                </div>
+                <!--Starter two-->
+                <div class="pizzaName col-10">
+                    <h1>Bruschetta</h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$8.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Bread with pesto, tomatoes, onion, garlic</span>
+                </div>
+                <!--starter Three-->
+                <div class="pizzaName col-10">
+                    <h1>Garlic bread</h1>
+
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$9.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Grilled ciabatta, garlic butter, onions</span>
+                </div>
+                <!-- Starter Four-->
+                <div class="pizzaName col-10">
+                    <h1>Tomozzarella</h1>
+                </div>
+                <div class="pizzaPrice">
+                    <h2>$10.50</h2>
+                </div>
+                <div class="pizzaIngrediants">
+                    <span>Tomatoes and mozzarella</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="about" id="about">
     <h1>About</h1>
     <div class="allInfo">
@@ -147,12 +246,12 @@
         </p>
         <img id="smallPick" src="Pics/chef.jpg">
         <div class="chef">
-        <p>
-            <strong>The Chef? </strong> Mr. Italiano himself
-        </p>
-        <p>
-            We are proud of our interiors.
-        </p>
+            <p>
+                <strong>The Chef? </strong> Mr. Italiano himself
+            </p>
+            <p>
+                We are proud of our interiors.
+            </p>
         </div>
 
         <div class="clear"></div>
@@ -185,17 +284,17 @@
 <div id="map" style="width: 100%; height: 400px; filter: grayscale(60%);"></div>
 <div class="contact" id="contact">
     <div class="contactInfo">
-    <h1>Contact</h1>
-    <p>
-        Find us at some address at some place or call us at 05050515-122330
-    </p>
-    <p>
-        <mark style="padding: 5px; background-color: black; color:white;">FYI!</mark>
-        We offer full-service catering for any event, large or small. We understand your needs and we will cater the
-        food to satisfy the biggerst criteria of them all, both look and taste.
-    </p>
+        <h1>Contact</h1>
+        <p>
+            Find us at some address at some place or call us at 05050515-122330
+        </p>
+        <p>
+            <mark style="padding: 5px; background-color: black; color:white;">FYI!</mark>
+            We offer full-service catering for any event, large or small. We understand your needs and we will cater the
+            food to satisfy the biggerst criteria of them all, both look and taste.
+        </p>
 
-    <span>
+        <span>
         <strong> Reserve </strong> a table, ask for today's special or just send us a message:
     </span>
         <form>
