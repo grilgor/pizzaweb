@@ -156,31 +156,7 @@ body {
   margin: auto;
   background-color: white; }
   .middleMenu .midMenuButtons {
-    overflow: hidden;
-    /*
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: inherit;
-      overflow: hidden;
-      li {
-        text-align: center;
-        margin-right: -1px;
-        margin-left: -1px;
-        margin-top: 1px;
-        color: white;
-        display: inline-block;
-        background-color: black;
-        padding: 12px 2px;
-        font-size: 36px;
-        border: none;
-        outline: none;
-      }
-      li:hover {
-        background-color: #f44336;
-      }
-    }*/ }
+    overflow: hidden; }
     .middleMenu .midMenuButtons button {
       font-family: "Amatic SC", sans-serif;
       width: 33.33%;
@@ -239,6 +215,9 @@ body {
       .middleMenu .pizzaMenu .pizzaIngrediants span {
         font-size: 36px;
         color: #757575; }
+  @media only screen and (max-width: 600px) {
+    .middleMenu .pizzaMenu {
+      width: 95%; } }
 
 .about {
   background-color: #8b5f5b;
@@ -269,6 +248,15 @@ body {
     .about .allInfo .right {
       overflow: hidden;
       width: 50%; }
+    @media only screen and (max-width: 600px) {
+      .about .allInfo .left {
+        float: left;
+        width: 48%;
+        font-size: 10px; }
+      .about .allInfo .right {
+        overflow: hidden;
+        width: 48%;
+        font-size: 10px; } }
     .about .allInfo h1 {
       font-size: 36px;
       font-weight: 400;
@@ -287,7 +275,10 @@ body {
     .contact .contactInfo h1 {
       color: white;
       margin: 0;
-      padding-top: 80px; }
+      padding-top: 80px;
+      font-size: 64px;
+      text-align: center;
+      margin-bottom: 80px; }
     .contact .contactInfo p, .contact .contactInfo mark {
       color: white;
       font-size: 24px; }
@@ -304,7 +295,8 @@ body {
       overflow: hidden; }
     .contact .contactInfo input[type=submit] {
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 80px; }
 
 .botblack {
   background-color: black;
@@ -313,8 +305,14 @@ body {
   font-size: 36px; }
   .botblack p a {
     color: white; }
+  .botblack .lin:hover {
+    color: green; }
 
 .clear {
   clear: both; }
+
+#openHours {
+  width: 100%;
+  min-height: 450px; }
 
 /*# sourceMappingURL=style.css.map */
